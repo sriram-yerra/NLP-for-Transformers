@@ -1,4 +1,4 @@
-Krish Naik: NLP
+**Krish Naik: NLP**
 
 1. Natural language Processing (Day1 - Day5)
 2. Advanced NLP (Last 4 Days)
