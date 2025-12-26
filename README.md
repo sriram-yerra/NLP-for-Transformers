@@ -101,3 +101,18 @@ Modern usage | — | Rare | Limited | Limited |
 ### 🚀 Note
 While RNN, LSTM, and GRU laid the foundation for sequence modeling, modern NLP systems primarily rely on **Transformer architectures** built entirely on attention mechanisms.
 
+### 🤖 Transformers (Attention-based Models)
+
+**Transformers** are modern deep learning architectures designed for sequence modeling that rely entirely on **self-attention** instead of recurrent connections. They process all tokens in parallel, making them highly efficient and scalable for large datasets.
+
+**Key points:**
+- Use **self-attention** to capture long-range dependencies
+- Enable **parallel processing** (faster than RNNs)
+- Form the backbone of models like **BERT, GPT, T5, and LLaMA**
+- Achieve state-of-the-art results in most NLP tasks
+
+➡️ Transformers have become the standard architecture for modern NLP systems.
+
+> **Transformers** are attention-based models that replace recurrence with self-attention, enabling faster and more effective learning of long-range dependencies in NLP.
+
+
