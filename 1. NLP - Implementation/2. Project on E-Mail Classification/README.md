@@ -1,6 +1,6 @@
 ## **Spam Classification Pipeline**
 
-```text
+```
 Raw SMS text
    ↓
 Text Cleaning & Preprocessing
@@ -16,18 +16,7 @@ Model Training (Naive Bayes)
 Prediction
    ↓
 Evaluation (Accuracy + Classification Report)
- 
- ---
-
- Raw Data
-   ↓
-Transformer (e.g., TF-IDF, Scaler)
-   ↓
-Features
-   ↓
-Estimator (e.g., Naive Bayes, RandomForest)
-   ↓
-Predictions
+```
 
 ---
 
@@ -40,11 +29,27 @@ Understanding this explains why `RandomForestClassifier` does not implement `fit
 
 ---
 
-## 🔄 Transformers vs Estimators (Models)
+## **Using Transformer vs Estimator Pipeline**
+
+```
+Raw Data
+   ↓
+Transformer (e.g., TF-IDF, Scaler)
+   ↓
+Features
+   ↓
+Estimator (e.g., Naive Bayes, RandomForest)
+   ↓
+Predictions
+```
+
+---
+
+## Transformers vs Estimators (Models)
 
 scikit-learn broadly categorizes tools into:
 
-### 🧱 **Transformers — Change the data**
+### **1. Transformers — Change the data**
 
 Transformers are used to convert raw data into a new feature representation.  
 They learn parameters from the data and then apply a transformation.
@@ -62,8 +67,9 @@ They provide:
 
 ```python
 X = TfidfVectorizer().fit_transform(corpus)
+```
 
-### 🤖 **Estimators / Models — Learn & Predict**
+### **2. Estimators / Models — Learn & Predict**
 
 Estimators (also called models) are used to learn a mapping from input features **X** to output labels **y**.  
 Their role is to **make predictions**, not to change the data representation.
@@ -84,9 +90,8 @@ They do **not** provide:
 
 ```python
 from sklearn.ensemble import RandomForestClassifier
+```
 
 clf = RandomForestClassifier()
 clf.fit(X_train, y_train)
 y_pred = clf.predict(X_test)
-
-
