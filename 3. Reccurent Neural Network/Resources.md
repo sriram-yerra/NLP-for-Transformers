@@ -1,0 +1,1 @@
+https://aws.amazon.com/what-is/recurrent-neural-network/#how-do-transformers-overcome-the-limitations-of-recurrent-neural-networks--qq7nqf
